@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Travel</title>
+    <link rel="stylesheet" href="../css/travel.css">
+</head>
+<body>
+    <header class="top">
+        <nav>
+            <button class="topButton" onclick="location.href='index.html'">Home</button>
+            <button class="topButton" onclick="window.open('https://blog.naver.com/clipdiary', '_blank')">Blog</button>
+            <button class="topButton" onclick="window.open('https://www.instagram.com/kxxnxyxn', '_blank')">Instagram</button>
+            <button class="topButton" onclick="location.href='quiz.html'">Quiz</button>
+        </nav>
+    </header>
+
+    <h1>Travel Diary</h1>
+
+    <section class="filters">
+        <select id="regionFilter">
+            <option value="all">전체 지역</option>
+            <option value="korea">한국</option>
+            <option value="japan">일본</option>
+            <option value="hongkong">홍콩</option>
+        </select>
+        <select id="yearFilter">
+            <option value="all">전체 년도</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+        </select>
+    </section>
+
+    <main id="travelList"></main>
+
+    <div id="modal" class="hidden">
+        <button id="preButton">◀</button>
+        <img id="modalImage">
+        <button id="nextButton">▶</button>
+        <span id="closeButton" onclick="closeModal()">✖</span>
+    </div>
+
+
+    <footer class="middle">
+        <p class="middleText">서경대학교 소프트웨어학과 2024216008 김나윤</p>
+    </footer>
+
+    <script defer src="../script/travel.js"></script>
+</body>
+</html>

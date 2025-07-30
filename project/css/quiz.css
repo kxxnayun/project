@@ -1,0 +1,94 @@
+body {
+    background-color: white;
+}
+
+h1 {
+    color: pink;
+    text-shadow:
+        -2px -2px 0 #1A1A1A,
+         2px -2px 0 #1A1A1A,
+        -2px  2px 0 #1A1A1A,
+         2px  2px 0 #1A1A1A;
+    font-size: 100px;
+    font-weight: 900;
+    text-align: center;
+    margin-top: -40px;
+    margin-bottom: 40px;
+}
+
+.top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: pink;
+    padding: 16px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+.topButton {
+    background-color: transparent;
+    border: none;
+    color: #1A1A1A;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 8px 16px;
+}
+
+.topButton:hover {
+    text-decoration: underline;
+}
+
+.middle {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: pink;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.15);
+}
+
+.middleText {
+    margin: 0;
+    font-size: 15px;
+    font-weight: bold;
+    color: #1A1A1A;
+}
+
+main {
+    padding: 32px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.quiz-box { 
+    line-height: 2;
+    padding: 16px; 
+    background: #f4f4f4; 
+    border-radius: 12px; 
+    margin: 16px 200px; 
+    text-align: center;
+}
+    
+.quiz-box h3 { 
+    margin-bottom: 8px; 
+}
+    
+.result { 
+    font-weight: bold; 
+    margin-top: 8px; 
+}
+    
+.correct { 
+    color: green; 
+}
+    
+.wrong { 
+    color: red; 
+}

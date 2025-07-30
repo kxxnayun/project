@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="../css/quiz.css" />
+</head>
+<body>
+    <header class="top">
+        <nav>
+            <button class="topButton" onclick="location.href='index.html'">Home</button>
+            <button class="topButton" onclick="window.open('https://blog.naver.com/clipdiary', '_blank')">Blog</button>
+            <button class="topButton" onclick="window.open('https://www.instagram.com/kxxnxyxn', '_blank')">Instagram</button>
+            <button class="topButton" onclick="location.href='quiz.html'" class="topButton">Quiz</button>
+        </nav>
+    </header>
+
+    <main class="quiz-container">
+        <h1>Quiz</h1>
+
+        <div class="quiz-box">
+            <h3>Q1. 제 생일은 언제일까요?</h3>
+            <form id="quiz1">
+                <label><input type="radio" name="q1" value="0808">8월 8일</label><br>
+                <label><input type="radio" name="q1" value="0909">9월 9일</label><br>
+                <label><input type="radio" name="q1" value="1010">10월 10일</label><br>
+                <button type="submit">제출</button>
+            </form>
+            <p id="result1" class="result"></p>
+        </div>
+
+        <div class="quiz-box">
+            <h3>Q2. 제가 가장 좋아하는 것은 무엇일까요?</h3>
+            <form id="quiz2">
+                <label><input type="radio" name="q2" value="travel">여행</label><br>
+                <label><input type="radio" name="q2" value="baseball">야구</label><br>
+                <label><input type="radio" name="q2" value="book">책 읽기</label><br>
+                <button type="submit">제출</button>
+            </form>
+            <p id="result2" class="result"></p>
+        </div>
+
+        <div class="quiz-box">
+            <h3>Q3. 가본 적이 없는 여행지는?</h3>
+            <form id="quiz3">
+                <label><input type="radio" name="q3" value="hongkong">홍콩</label><br>
+                <label><input type="radio" name="q3" value="tokyo">일본 도쿄</label><br>
+                <label><input type="radio" name="q3" value="osaka">일본 오사카</label><br>
+                <button type="submit">제출</button>
+            </form>
+            <p id="result3" class="result"></p>
+        </div>
+    </main>
+
+    <footer class="middle">
+        <p class="middleText">서경대학교 소프트웨어학과 2024216008 김나윤</p>
+    </footer>
+
+    <script src="../script/quiz.js"></script>
+</body>
+</html>

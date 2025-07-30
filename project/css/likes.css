@@ -1,0 +1,140 @@
+body {
+    background-color: #1A1A1A;
+}
+
+h1 {
+    color: #FFB347;
+    text-shadow:
+        -2px -2px 0 #1A1A1A,
+         2px -2px 0 #1A1A1A,
+        -2px  2px 0 #1A1A1A,
+         2px  2px 0 #1A1A1A;
+    font-size: 100px;
+    font-weight: 900;
+    margin-top: 30px;
+    text-align: center;
+    margin-bottom: -40px;
+}
+
+.top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FFB347;
+    padding: 16px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.topButton {
+    background-color: transparent;
+    border: none;
+    color: #1A1A1A;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 8px 16px;
+}
+
+.topButton:hover {
+    text-decoration: underline;
+}
+
+.middle {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FFB347;
+    padding: 16px;
+    text-align: center;
+}
+
+.middleText {
+    margin: 0;
+    font-size: 15px;
+    font-weight: bold;
+    color: #1A1A1A;
+}
+
+.likes-container {
+    width: min(90vw, 1400px);
+    margin: 150px auto 100px;
+    padding: 32px;
+    background-color: white;
+}
+
+main {
+    padding: 2rem;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.section {
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section h2 {
+    font-size: 24px;
+    color: #1A1A1A;
+    border-left: 5px solid #FFB347;
+    padding-left: 10px;
+    margin-bottom: 12.8px;
+}
+
+.section p {
+    font-size: 17.6px;
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-top: 16px;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
+    text-align: center;
+}
+
+#preButton, #nextButton {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
+#preButton {
+    left: 10px;
+}
+
+#nextButton {
+    right: 10px;
+}
